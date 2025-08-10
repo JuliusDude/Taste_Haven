@@ -1,16 +1,17 @@
 /* ================== VARIABLES & BASIC SETUP ================== */
 :root {
-  --primary-brand-color: #CC5500; /* Burnt Orange */
-  --accent-color: #556B2F;        /* Deep Olive Green */
-  --background-cream: #f3eddf;    /* Your logo's background color */
-  --text-dark-gray: #333333;      /* For main body text */
-  --text-medium-gray: #686868;    /* For subheadings */
-  --heading-color: #556B2F;       /* Deep Olive for headings */
-  --footer-background: #333333;   /* Dark gray footer */
+  --primary-brand-color: #CC5500; 
+  --accent-color: #556B2F;        
+  --background-cream: #f3eddf;    
+  --text-dark-gray: #333333;      
+  --text-medium-gray: #686868;    
+  --heading-color: #556B2F;       
+  --footer-background: #333333;   
   --link-color: #CC5500;
   --link-hover-color: #A34400;
 }
-/* Basic Reset */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +64,6 @@ header nav a:hover {
 
 /* ================== HERO SECTION ================== */
 .hero {
-  /* The path is corrected to go up one level from the css folder */
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../image/bg_2.png') center center/cover no-repeat;
   height: 80vh;
   display: flex;
@@ -134,17 +134,17 @@ header nav a:hover {
 
 /* ================== MENU SECTION ================== */
 .menu-category {
-  display: flex; /* Use flexbox for side-by-side layout */
+  display: flex; 
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .menu-item {
   width: 320px;
   background-color: #fff;
   border-radius: 10px;
-  overflow: hidden; /* Ensures image zoom doesn't go outside the border-radius */
+  overflow: hidden; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   text-align: left;
 }
@@ -154,11 +154,11 @@ header nav a:hover {
   height: 220px;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease; /* Smooth zoom transition */
+  transition: transform 0.4s ease; 
 }
 
 .menu-item:hover img {
-  transform: scale(1.1); /* Zoom on hover effect */
+  transform: scale(1.1); 
 }
 
 .menu-item-info {
@@ -225,4 +225,5 @@ footer {
 footer p {
   font-size: 0.9rem;
   color: var(--text-medium-gray);
+
 }
