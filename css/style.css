@@ -1,0 +1,228 @@
+/* ================== VARIABLES & BASIC SETUP ================== */
+:root {
+  --primary-brand-color: #CC5500; /* Burnt Orange */
+  --accent-color: #556B2F;        /* Deep Olive Green */
+  --background-cream: #f3eddf;    /* Your logo's background color */
+  --text-dark-gray: #333333;      /* For main body text */
+  --text-medium-gray: #686868;    /* For subheadings */
+  --heading-color: #556B2F;       /* Deep Olive for headings */
+  --footer-background: #333333;   /* Dark gray footer */
+  --link-color: #CC5500;
+  --link-hover-color: #A34400;
+}
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-cream);
+  color: var(--text-dark-gray);
+  line-height: 1.6;
+}
+
+/* ================== HEADER ================== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: var(--background-cream);
+  border-bottom: 1px solid #ddd;
+}
+
+.header-logo img {
+  height: 60px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--link-hover-color);
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+  /* The path is corrected to go up one level from the css folder */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../image/bg_2.png') center center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.hero-text .brand-name {
+  font-weight: bold;
+  color: var(--primary-brand-color);
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+/* ================== CONTENT SECTIONS ================== */
+.content-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+}
+
+.content-section h3 {
+  font-size: 1.8rem;
+  color: var(--text-medium-gray);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto; /* Center the paragraph text */
+  font-size: 1.1rem;
+  color: var(--text-medium-gray);
+}
+
+/* ================== MENU SECTION ================== */
+.menu-category {
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.menu-item {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures image zoom doesn't go outside the border-radius */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease; /* Smooth zoom transition */
+}
+
+.menu-item:hover img {
+  transform: scale(1.1); /* Zoom on hover effect */
+}
+
+.menu-item-info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item-info h4 {
+  font-size: 1.2rem;
+  color: var(--text-dark-gray);
+}
+
+.menu-item-info span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/* ================== CONTACT SECTION ================== */
+.contact-info {
+  font-size: 1.2rem;
+  color: var(--text-medium-gray);
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  background-color: var(--footer-background);
+  color: var(--background-cream);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.social-media {
+  margin-bottom: 15px;
+}
+
+.social-media a {
+  color: var(--background-cream);
+  font-size: 1.5rem;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: var(--primary-brand-color);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: var(--text-medium-gray);
+}
