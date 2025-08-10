@@ -51,13 +51,14 @@ cd Taste_Haven
 
 
 Or click this link->
-https://juliusdude.github.io/Taste_Haven/
+[Taste Haven](https://juliusdude.github.io/Taste_Haven/)
 
 ---
 
 ## 🖼️ Screenshot
 
-*(Here you can add a screenshot of your website's homepage)*
+<img width="1848" height="878" alt="image" src="https://github.com/user-attachments/assets/19861e87-a8f7-4db5-8e6e-6743134457d2" />
+
 
 ---
 
