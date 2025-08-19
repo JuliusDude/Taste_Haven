@@ -65,6 +65,6 @@ Or click this link->
 ## 🤝 Contributors
 - [Julius B Thomas](https://github.com/JuliusDude)
 - [Steven Mathew Binu](https://github.com/stevezone17-ops)
-- [Allen Saijo](https://github.com/JuliusDude)
+- [Allen Saijo](https://github.com/AlenSaijo)
 
 
